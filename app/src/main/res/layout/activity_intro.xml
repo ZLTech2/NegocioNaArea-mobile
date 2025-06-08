@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.IntroActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="872dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tela_com_desf" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="192dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="268dp"
+        android:fontFamily="@font/anton"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0.8"
+        android:shadowColor="#9C27B0"
+        android:shadowDx="8"
+        android:shadowDy="8"
+        android:shadowRadius="20"
+        android:text="NEGÓCIO NA ÁREA"
+        android:textColor="#8700FD"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/anton"
+        android:text="EMAIL/CNPJ"
+        android:textColor="#ECCB00"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmailLogin"
+        android:layout_width="278dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/fundo_branco"
+        android:ems="10"
+        android:fontFamily="@font/anton"
+        android:hint="  DIGITE SEU EMAIL OU CNPJ"
+        android:inputType="text"
+        android:textColorHighlight="#B2AFAF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="47dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/anton"
+        android:text="SENHA"
+        android:textColor="#ECCB00"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPasswordLogin"
+        android:layout_width="283dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fundo_branco"
+        android:ems="10"
+        android:fontFamily="@font/anton"
+        android:hint="  DIGITE SUA SENHA"
+        android:inputType="textPassword"
+        android:textColorHighlight="#B2AFAF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btneEntrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btneEntrar"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_amarelo"
+        android:fontFamily="@font/anton"
+        android:text="ENTRAR"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastrar"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/btn_transparente"
+        android:fontFamily="@font/anton"
+        android:text="CADASTRE-SE"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

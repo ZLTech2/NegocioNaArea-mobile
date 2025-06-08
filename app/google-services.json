@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "203948775342",
+    "project_id": "negocionaarea",
+    "storage_bucket": "negocionaarea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203948775342:android:8defa8035c22abce501a3f",
+        "android_client_info": {
+          "package_name": "com.example.negocionaarea"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7U0VdfoOxUuIJEBhIYiw9eTB1JOUle24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
