@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_cadastro_cliente">
+    tools:context=".view.activity_cadastro_cliente">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -71,13 +71,13 @@
         android:text="NOME "
         android:textColor="#ECCB00"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNomeEmpresa"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNomeCliente"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/editTextNomeEmpresa"
+        android:id="@+id/editTextNomeCliente"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginBottom="4dp"
@@ -102,13 +102,13 @@
         android:text="TELEFONE"
         android:textColor="#ECCB00"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextEmailEmpresa"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailCliente"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/editTextEmailEmpresa"
+        android:id="@+id/editTextEmailCliente"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginBottom="12dp"
@@ -133,13 +133,13 @@
         android:text="EMAIL"
         android:textColor="#ECCB00"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTelEmpresa"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTelCliente"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/editTextTelEmpresa"
+        android:id="@+id/editTextTelCliente"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:background="@drawable/fundo_branco"
@@ -163,13 +163,13 @@
         android:text="SENHA"
         android:textColor="#ECCB00"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordEmpresa"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordCliente"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/editTextPasswordEmpresa"
+        android:id="@+id/editTextPasswordCliente"
         android:layout_width="319dp"
         android:layout_height="54dp"
         android:layout_marginBottom="44dp"
@@ -186,7 +186,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView5" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonCadastrarEmpresa"
+        android:id="@+id/buttonCadastrarCliente"
         android:layout_width="154dp"
         android:layout_height="48dp"
         android:layout_marginBottom="12dp"
