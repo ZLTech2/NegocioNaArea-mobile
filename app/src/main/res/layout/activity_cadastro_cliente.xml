@@ -195,12 +195,12 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonVoltarLogin"
-        android:layout_width="185dp"
-        android:layout_height="55dp"
+        android:layout_width="168dp"
+        android:layout_height="51dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/btn_transparente"
         android:fontFamily="@font/anton"
-        android:text="Voltar a tela de cadastro"
+        android:text="Voltar a tela de login"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"

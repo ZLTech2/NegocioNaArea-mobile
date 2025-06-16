@@ -19,6 +19,12 @@ class escolhaUsuario : AppCompatActivity() {
             startActivity(Intent(this, cadastroEmpresa::class.java))
         }
 
+        binding.btnCadastroCliente.setOnClickListener{
+            startActivity(Intent(this, cadastro_cliente::class.java))
+        }
+
+
+
 
     }
 }
