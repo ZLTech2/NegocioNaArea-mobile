@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_cadastro_cliente">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/tela_com_desf" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#B8000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="350dp"
+        android:layout_height="451dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fundo_roxo" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="204dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/anton"
+        android:lineSpacingMultiplier="0.8"
+        android:shadowColor="#020202"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="10"
+        android:text="NEGÓCIO NA ÁREA"
+        android:textColor="#8500FB"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/anton"
+        android:text="NOME "
+        android:textColor="#ECCB00"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNomeEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextNomeEmpresa"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/fundo_branco"
+        android:ems="10"
+        android:fontFamily="@font/anton"
+        android:hint="  DIGITE O NOME DA EMPRESA"
+        android:inputType="text"
+        android:textColorHighlight="#B2AFAF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="101dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/anton"
+        android:text="TELEFONE"
+        android:textColor="#ECCB00"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextEmailEmpresa"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/fundo_branco"
+        android:ems="10"
+        android:fontFamily="@font/anton"
+        android:hint="  DIGITE SEU EMAIL"
+        android:inputType="text"
+        android:textColorHighlight="#B2AFAF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/anton"
+        android:text="EMAIL"
+        android:textColor="#ECCB00"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTelEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextTelEmpresa"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
+        android:background="@drawable/fundo_branco"
+        android:ems="10"
+        android:fontFamily="@font/anton"
+        android:hint="  DIGITE SUA SENHA"
+        android:inputType="text"
+        android:textColorHighlight="#B2AFAF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        tools:layout_editor_absoluteY="512dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/anton"
+        android:text="SENHA"
+        android:textColor="#ECCB00"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/editTextPasswordEmpresa"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/fundo_branco"
+        android:ems="10"
+        android:fontFamily="@font/anton"
+        android:hint="  DIGITE SUA SENHA"
+        android:inputType="textPassword"
+        android:textColorHighlight="#B2AFAF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="@+id/imageView5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCadastrarEmpresa"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btn_amarelo"
+        android:fontFamily="@font/anton"
+        android:text="CADASTRAR"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltarLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVoltarLogin"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_transparente"
+        android:fontFamily="@font/anton"
+        android:text="VOLTAR A TELA DE LOGIN"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
