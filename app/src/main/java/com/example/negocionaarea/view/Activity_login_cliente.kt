@@ -1,10 +1,11 @@
-package com.example.negocionaarea
+package com.example.negocionaarea.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.negocionaarea.R
 
 class Activity_login_cliente : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

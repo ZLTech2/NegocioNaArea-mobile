@@ -1,4 +1,4 @@
-package com.example.negocionaarea.view.model
+package com.example.negocionaarea.model
 import com.google.firebase.database.FirebaseDatabase
 
 

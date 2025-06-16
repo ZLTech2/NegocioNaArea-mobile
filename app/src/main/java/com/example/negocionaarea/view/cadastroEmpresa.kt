@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.negocionaarea.databinding.ActivityCadastroEmpresaBinding
-import com.example.negocionaarea.view.model.empresaModel
+import com.example.negocionaarea.model.empresaModel
 import com.google.firebase.database.FirebaseDatabase
 
 class cadastroEmpresa : AppCompatActivity() {

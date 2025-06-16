@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.negocionaarea.databinding.ActivityIntroBinding
-import com.example.negocionaarea.view.controller.empresaController
+import com.example.negocionaarea.controller.empresaController
 
 class IntroActivity : AppCompatActivity() {
     private lateinit var binding: ActivityIntroBinding
