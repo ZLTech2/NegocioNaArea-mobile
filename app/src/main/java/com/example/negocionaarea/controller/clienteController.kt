@@ -12,7 +12,6 @@ class clienteController {
         private val clientesRef = database.getReference("clientes")
 
     // Função para cadastrar cliente com ID aleatório
-
     fun cadastrarCliente(cliente: clienteModel, onSuccess: () -> Unit, onFailure: (Exception) -> Unit) {
         val novaChave = clientesRef.push().key
 

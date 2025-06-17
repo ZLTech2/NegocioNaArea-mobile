@@ -4,12 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.negocionaarea.controller.clienteController
 import com.example.negocionaarea.databinding.ActivityIntroBinding
 import com.example.negocionaarea.controller.empresaController
 
 class IntroActivity : AppCompatActivity() {
     private lateinit var binding: ActivityIntroBinding
     private val controller = empresaController()
+    private val cliente = clienteController()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,15 +34,26 @@ class IntroActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            controller.autenticarEmpresa(input, senha) { sucesso ->
-                if (sucesso) {
-                    Toast.makeText(this, "Login realizado com sucesso!", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, loginEmpresa::class.java))
+            // Primeiro tenta login como cliente
+            cliente.autenticarCliente(input, senha) { clienteLogado ->
+                if (clienteLogado) {
+                    Toast.makeText(this, "Login do cliente realizado com sucesso!", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, Activity_login_cliente::class.java))
                     finish()
                 } else {
-                    Toast.makeText(this, "Email, CNPJ ou senha incorretos", Toast.LENGTH_SHORT).show()
+                    // Se não for cliente, tenta como empresa
+                    controller.autenticarEmpresa(input, senha) { empresaLogado ->
+                        if (empresaLogado) {
+                            Toast.makeText(this, "Login da empresa realizado com sucesso!", Toast.LENGTH_SHORT).show()
+                            startActivity(Intent(this, loginEmpresa::class.java))
+                            finish()
+                        } else {
+                            Toast.makeText(this, "Email, CNPJ, telefone ou senha incorretos", Toast.LENGTH_SHORT).show()
+                        }
+                    }
                 }
             }
+
         }
     }
 }
